@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController : UIViewController {
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var messageTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func sendMail(sender: UIButton, forEvent event: UIEvent) {
+        messageLabel.text = messageTextField.text
+        messageLabel.hidden = false
+        
+        messageLabel.resignFirstResponder()
+    }
 
 }
+
 
