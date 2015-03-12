@@ -13,9 +13,10 @@
                         <viewControllerLayoutGuide type="bottom" id="i2V-bg-xNV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="loD-AB-Dio">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="TYx-wV-NfJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="TYx-wV-NfJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
@@ -56,7 +57,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="426-Tm-XnG">
@@ -101,7 +102,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="11" y="90" width="139" height="136"/>
+                                    <rect key="frame" x="11" y="138" width="139" height="88"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-0s-ta7">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="11" y="90" width="139" height="47"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -113,6 +123,7 @@
                                 <exclude reference="DVh-d9-FkG"/>
                                 <exclude reference="vg0-hd-RTK"/>
                                 <exclude reference="YDN-iN-hJQ"/>
+                                <exclude reference="iVx-0s-ta7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +133,7 @@
                                 <include reference="DVh-d9-FkG"/>
                                 <include reference="vg0-hd-RTK"/>
                                 <include reference="YDN-iN-hJQ"/>
+                                <include reference="iVx-0s-ta7"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +141,7 @@
                     <connections>
                         <outlet property="messageLabel" destination="YDN-iN-hJQ" id="mX7-GA-ghD"/>
                         <outlet property="messageTextField" destination="DVh-d9-FkG" id="00A-75-2S3"/>
+                        <outlet property="nameLabel" destination="iVx-0s-ta7" id="lA6-Rd-6Hj"/>
                         <outlet property="nameTextField" destination="V5G-R9-ZYy" id="P3N-oT-3ZJ"/>
                     </connections>
                 </viewController>

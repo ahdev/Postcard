@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController : UIViewController {
     
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var messageTextField: UITextField!
@@ -25,10 +26,16 @@ class ViewController : UIViewController {
     }
 
     @IBAction func sendMail(sender: UIButton, forEvent event: UIEvent) {
+        nameLabel.text = nameTextField.text
+        nameLabel.textColor = UIColor.blueColor()
+        nameLabel.hidden = false
+        
         messageLabel.text = messageTextField.text
+        messageLabel.textColor = UIColor.blueColor()
         messageLabel.hidden = false
         
-        messageLabel.resignFirstResponder()
+        nameTextField.resignFirstResponder()
+        messageTextField.resignFirstResponder()
     }
 
 }
