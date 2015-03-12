@@ -25,7 +25,7 @@ class ViewController : UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func sendMail(sender: UIButton, forEvent event: UIEvent) {
+    @IBAction func sendMailButtonPressed(sender: UIButton, forEvent event: UIEvent) {
         nameLabel.text = nameTextField.text
         nameLabel.textColor = UIColor.blueColor()
         nameLabel.hidden = false

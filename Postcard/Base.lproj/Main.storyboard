@@ -93,18 +93,9 @@
                                     <rect key="frame" x="11" y="329" width="343" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sendMail:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFI-K0-241"/>
+                                    <action selector="sendMailButtonPressed:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jRJ-au-Mqx"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-iN-hJQ">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="11" y="138" width="139" height="88"/>
-                                </variation>
-                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-0s-ta7">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -112,6 +103,15 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="11" y="90" width="139" height="47"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-iN-hJQ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="11" y="138" width="139" height="88"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -122,8 +122,8 @@
                                 <exclude reference="V5G-R9-ZYy"/>
                                 <exclude reference="DVh-d9-FkG"/>
                                 <exclude reference="vg0-hd-RTK"/>
-                                <exclude reference="YDN-iN-hJQ"/>
                                 <exclude reference="iVx-0s-ta7"/>
+                                <exclude reference="YDN-iN-hJQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -132,8 +132,8 @@
                                 <include reference="V5G-R9-ZYy"/>
                                 <include reference="DVh-d9-FkG"/>
                                 <include reference="vg0-hd-RTK"/>
-                                <include reference="YDN-iN-hJQ"/>
                                 <include reference="iVx-0s-ta7"/>
+                                <include reference="YDN-iN-hJQ"/>
                             </mask>
                         </variation>
                     </view>
